@@ -1,7 +1,9 @@
 # Custom TorchScript Operators Example
 
 This repository contains examples for writing, compiling and using custom
-TorchScript operators. See [here]() for the accompanying tutorial.
+TorchScript operators. See
+[here](https://github.com/goldsborough/custom-torch-script-ops/blob/d17178dbb734813817e7d08f610f03ee4b124efa/torch_script_custom_ops.rst)
+for the accompanying tutorial.
 
 ## Contents
 
