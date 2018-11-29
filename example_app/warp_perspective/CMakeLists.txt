@@ -1,0 +1,5 @@
+find_package(OpenCV REQUIRED)
+add_library(warp_perspective SHARED op.cpp)
+target_compile_features(warp_perspective PRIVATE cxx_range_for)
+target_link_libraries(warp_perspective PRIVATE "${TORCH_LIBRARIES}")
+target_link_libraries(warp_perspective PRIVATE opencv_core opencv_photo)
