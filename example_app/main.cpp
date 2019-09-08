@@ -11,13 +11,13 @@
     }
  
     // Deserialize the ScriptModule from a file using torch::jit::load().
-    std::shared_ptr<torch::jit::script::Module> module = torch::jit::load(argv[1]);
+    torch::jit::script::Module module = torch::jit::load(argv[1]);
 
     std::vector<torch::jit::IValue> inputs;
     inputs.push_back(torch::randn({4, 8}));
     inputs.push_back(torch::randn({8, 5}));
 
-    torch::Tensor output = module->forward(std::move(inputs)).toTensor();
+    torch::Tensor output = module.forward(std::move(inputs)).toTensor();
 
     std::cout << output << std::endl;
   }
