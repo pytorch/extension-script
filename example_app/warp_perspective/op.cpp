@@ -20,4 +20,4 @@ torch::Tensor warp_perspective(torch::Tensor image, torch::Tensor warp) {
 }
 
 static auto registry =
-  torch::jit::RegisterOperators("my_ops::warp_perspective", &warp_perspective);
+  torch::RegisterOperators("my_ops::warp_perspective", &warp_perspective);
