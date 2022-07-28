@@ -14,11 +14,17 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 
 # Symlink the Miniconda activation script to /activate
 RUN ln -s ~/local/miniconda/bin/activate /activate
+#Change python to 3.7
+RUN . /activate && conda install python=3.7
 # Install PyTorch
-RUN . /activate && conda install pytorch-nightly-cpu -c pytorch
+RUN . /activate && \
+  conda install  -c pytorch-nightly cpuonly && \
+  conda install  -c pytorch-nightly pytorch 
 
 # Download LibTorch
 RUN wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
 RUN unzip libtorch-shared-with-deps-latest.zip && rm libtorch-shared-with-deps-latest.zip
 
-WORKDIR /home
+# Get conda working
+ENV PATH=$PATH:/root/local/miniconda/bin/  
+RUN conda init bash
