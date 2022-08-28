@@ -1,0 +1,39 @@
+{
+  "image": "clark/extension-script2:latest",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+     "extensions": ["dbaeumer.vscode-eslint"],
+     "extensions": ["2gua.rainbow-brackets"],
+     "extensions": ["asvetliakov.vscode-neovim"],
+     "extensions": ["batisteo.vscode-django"],
+     "extensions": ["cschlosser.doxdocgen"],
+     "extensions": ["donjayamanne.python-environment-manager"],
+     "extensions": ["donjayamanne.python-extension-pack"],
+     "extensions": ["esbenp.prettier-vscode"],
+     "extensions": ["jeff-hykin.better-cpp-syntax"],
+     "extensions": ["KevinRose.vsc-python-indent"],
+     "extensions": ["ms-azuretools.vscode-docker"],
+     "extensions": ["ms-python.python"],
+     "extensions": ["ms-python.vscode-pylance"],
+     "extensions": ["ms-toolsai.jupyter"],
+     "extensions": ["ms-toolsai.jupyter-keymap"],
+     "extensions": ["ms-toolsai.jupyter-renderers"],
+     "extensions": ["ms-vscode-remote.remote-containers"],
+     "extensions": ["ms-vscode-remote.remote-ssh"],
+     "extensions": ["ms-vscode-remote.remote-ssh-edit"],
+     "extensions": ["ms-vscode-remote.remote-wsl"],
+     "extensions": ["ms-vscode-remote.vscode-remote-extensionpack"],
+     "extensions": ["ms-vscode.cmake-tools"],
+     "extensions": ["ms-vscode.cpptools"],
+     "extensions": ["ms-vscode.cpptools-extension-pack"],
+     "extensions": ["ms-vscode.cpptools-themes"],
+     "extensions": ["njpwerner.autodocstring"],
+     "extensions": ["oouo-diogo-perdigao.docthis"],
+     "extensions": ["twxs.cmake"],
+     "extensions": ["VisualStudioExptTeam.vscodeintellicode"],
+     "extensions": ["vscodevim.vim"],
+     "extensions": ["wholroyd.jinja"]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"python.linting.flake8Enabled": false,
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"files.associations": {
+		"array": "cpp",
+		"initializer_list": "cpp",
+		"utility": "cpp",
+		"valarray": "cpp"
+	},
+	"cmake.configureOnOpen": false
+}
